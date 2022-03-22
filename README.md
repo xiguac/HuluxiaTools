@@ -7,6 +7,7 @@
 1：自动顶贴工具：在浏览器中打开 http://你的域名/SendMessage.php?msg={需要发布的评论文字(支持中文)}&postid={帖子id} 
 ![avatar](https://raw.githubusercontent.com/xiguac/HuluxiaTools/main/2.png)   
 2：一键送葫芦工具：在浏览器打开http://你的域名/Credits.php?postid={帖子id或评论id}&msg={送葫芦留言}&sum={需要送的数量}  
+3：自动签到工具：在浏览器打开http://你的域名/Sign.php（每天访问一次）即可实现每个板块自动签到
 小技巧：可以使用定时任务等程序实现自动顶贴等操作，使帖子排名靠前
   
   
