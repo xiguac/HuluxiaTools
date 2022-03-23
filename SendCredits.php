@@ -1,7 +1,7 @@
 <?php
 ///////////////
 $cat_id = htmlspecialchars($_GET['cat_id']);//板块id
-$apikey = "";//您设置的apikey
+$apikey = htmlspecialchars($_GET['apikey']);//您设置的apikey
 $credistnum = "1";//赠送的葫芦数
 $msg = "测试";//赠送的留言
 ///////////////
