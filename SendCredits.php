@@ -4,6 +4,8 @@ $cat_id = htmlspecialchars($_GET['cat_id']);//板块id
 $apikey = htmlspecialchars($_GET['apikey']);//您设置的apikey
 $credistnum = "1";//赠送的葫芦数
 $msg = "测试";//赠送的留言
+$postsnum = "5";//检测帖子数量，监控时间越短此值应当越高
+$sleeptime = "5";//冷却时间，太短会赠送失败
 ///////////////
 
 //GET函数
@@ -50,7 +52,7 @@ foreach($str as $post){
       }else{
         $i = $i+1;
         array_push($array,$post['postID']);
-        echo HttpGet("http://".$_SERVER['SERVER_NAME']."/Credits.php?postid=".$post['postID']."&msg=".$msg."&sum=".$credistnum."&apikey=".$apikey);
+        echo file_get_contents("http://".$_SERVER['SERVER_NAME']."/Credits.php?postid=".$post['postID']."&msg=".$msg."&sum=".$credistnum."&apikey=".$apikey);
         echo "<br \>";
       }
     }

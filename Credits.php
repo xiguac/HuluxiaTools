@@ -11,4 +11,5 @@ if($result->status==1 && $result->iscredits==1){
     echo "赠送成功！";
 }else{
     echo "赠送失败！";
+    print_r($result);
 }?>
